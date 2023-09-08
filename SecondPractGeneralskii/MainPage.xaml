@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SecondPractGeneralskii.MainPage">
+
+    <StackLayout
+            Spacing="25"
+            Padding="30,0">
+        <Grid>
+            <Button
+                x:Name="CounterBtn"
+                Text="Расчитать"
+                Clicked="OnCounterClicked" Grid.Row="1" Grid.Column="1"/>
+            <Label 
+                    Text=""
+                    Margin="0,0,0,0"/>
+            <Entry 
+                x:Name="Rez1" Grid.Row="0"
+                
+                />
+        </Grid>
+    </StackLayout>
+</ContentPage>
