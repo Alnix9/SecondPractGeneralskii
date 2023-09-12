@@ -1,23 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SecondPractGeneralskii.MainPage">
 
-    <StackLayout
-            Spacing="25"
-            Padding="30,0">
-        <Grid>
-            <Button
-                x:Name="CounterBtn"
-                Text="Расчитать"
-                Clicked="OnCounterClicked" Grid.Row="1" Grid.Column="1"/>
-            <Label 
-                    Text=""
-                    Margin="0,0,0,0"/>
-            <Entry 
-                x:Name="Rez1" Grid.Row="0"
-                
-                />
-        </Grid>
-    </StackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout
+                Spacing="0"
+                Padding="0, 0"
+                VerticalOptions="Start">
+
+                <Label Text="Задание 1"/>
+                <Label
+                    Text="Длина ребра а"
+                    HorizontalTextAlignment="Center"/>
+                <Entry x:Name="zn1" Keyboard="Numeric" />
+                <Label
+                    Text="Длина ребра b"
+                    HorizontalTextAlignment="Center"/>
+                <Entry x:Name="zn2" />
+                <Label
+                    Text="Длина ребра c"
+                    HorizontalTextAlignment="Center"/>
+                <Entry x:Name="zn3" />
+                <Button Clicked="TaskOne"
+                        Text="Рассчитать"/>
+                <Label
+                    Text="Объём"
+                    HorizontalTextAlignment="Center"/>
+                <Entry x:Name="entRez1"
+                       IsEnabled="False"/>
+                <Label
+                    Text="Площадь поверхности"
+                    HorizontalTextAlignment="Center"/>
+                <Entry x:Name="entRez2"
+                       IsEnabled="False"/>
+
+                <Label Text="Задание 2"/>
+                <Label Text="Введите двузначное число"
+                       HorizontalTextAlignment="Center"/>
+                <Entry x:Name="zn4"/>
+                <Button Clicked="TaskTwo"
+                        Text="Найти сумму и произведение" />
+                <Label Text="Сумма"
+                       HorizontalTextAlignment="Center"/>
+                <Entry x:Name="entRez3"
+                       IsEnabled="False"/>
+                <Label Text="Произведение"
+                       HorizontalTextAlignment="Center"/>
+                <Entry x:Name="entRez4"
+                       IsEnabled="False"/>
+
+            </StackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>
